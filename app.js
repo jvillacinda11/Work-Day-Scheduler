@@ -25,16 +25,12 @@ document.addEventListener('click', (event) => {
 //this colo codes the time blocks
 let x = moment().hour()
 let currentHour = parseInt(x)
-console.log(currentHour)
 let item = document.getElementsByClassName('form-control')
-console.log(item.length)
 
 for (let i = 0, len = item.length; i < len; i++) {
 
   let blockHour = parseInt(item[i].id)
-  console.log('blockhour:' + blockHour)
   if (currentHour > blockHour) {
-    console.log(item[i].id)
     document.getElementById(`${item[i].id}`).classList.add('past')
   }
   if (currentHour == blockHour) {
@@ -47,8 +43,6 @@ for (let i = 0, len = item.length; i < len; i++) {
 
 //this recalls everything form the localStorage into the textAreas
 let toDoList = JSON.parse(localStorage.getItem('toDoList')) || []
-console.log(item.length)
-console.log(toDoList[0])
 for (let i = 0, len = item.length; i < len; i++) {
   document.getElementById(`${item[i].id}`).textContent = toDoList[i]
 }
