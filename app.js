@@ -22,7 +22,7 @@ document.addEventListener('click', (event) => {
 
   }
 })
-//this colo codes the time blocks
+//this color codes the time blocks
 let x = moment().hour()
 let currentHour = parseInt(x)
 let item = document.getElementsByClassName('form-control')
