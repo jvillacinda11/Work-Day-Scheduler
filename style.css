@@ -76,7 +76,7 @@ textarea {
   transition: all .3s ease-in-out;
 }
 .clearBtn {
-  border-left: 1px solid black;
+  border: 1px solid black;
   /* border-top-right-radius: 15px; */
   border-radius: 15px;
   background-color: #cf1717;
